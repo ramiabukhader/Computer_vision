@@ -1,0 +1,7 @@
+1. Gradient Descent: its a method for finding analytically the combination of weight values that 
+		yields the smallest possible loss function
+
+2. Adam Optimizar: Similar to Gardient descent, used to update network weights. 
+		In Adam a learning rate is maintained for each network weight and separately 
+		adapted as learning unfolds.
+

@@ -1,0 +1,4 @@
+1. Step function: it will output a 1 if the input is higher than a certain threshold, otherwise its output
+		will be zero.
+
+2. Linear Function: 

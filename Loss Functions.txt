@@ -1,0 +1,7 @@
+1. Entropy: the relative degree of randomness, and its the measure of the average information 
+		content per source symbol
+
+
+
+2. Cross Entropy: its used to quantify the difference between two probability distributions. The cross
+		entropy determines how close is the predicted distribution to the true distribution
