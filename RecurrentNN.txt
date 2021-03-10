@@ -1,0 +1,5 @@
+RNN is a type of neural networks used for time series data analysis with internal loop
+RNN processes sequences by iterating through the sequence elements, and it maintains a state containing info relative to what it has seen so far.
+RNN is a loop that reuses quantities computed during the previous iteration of the loop.
+The activation function used for RNN is Tanh(). it used for RNN because its range from -1 to 1 (logistic sigmoid).
+RNN takes inputs of shape (batch_size, timesteps, input_features) or (batch_size, output_features) and both models controlled by the return_sequences.
