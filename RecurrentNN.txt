@@ -3,3 +3,13 @@ RNN processes sequences by iterating through the sequence elements, and it maint
 RNN is a loop that reuses quantities computed during the previous iteration of the loop.
 The activation function used for RNN is Tanh(). it used for RNN because its range from -1 to 1 (logistic sigmoid).
 RNN takes inputs of shape (batch_size, timesteps, input_features) or (batch_size, output_features) and both models controlled by the return_sequences.
+-------------------------------------------------------
+LSTM : long short- Term Memory
+LSTM is a separate parallel track adds a way to carry info across many timesteps. it saves info for later and prevent older signals from gradually vanishing during processing.
+LSTM uses NLP, Q/A and machine translation.
+------------------------------------------------------
+Bidirectional RNN: contains 2 regular RNNs, each one processing in different direction then merging- chronological order , antichronological order- . 
+In other meaning, BiRNN is a two RNNs, one processing in normal order and other in reverse to catch patterns that may be overlooked by a unidirectional RNN.
+
+a variant of RNN offering better performance for certian tasks such as:
+Natural Language processing
