@@ -1,0 +1,23 @@
+DA is an approach of generating more training data from an existing training samples to avoid 
+	overfitting the model. 
+When applying DA for model. if we use ANN, we must use a dropout layer before the dense connected
+	classifier, because there still intercorrelation between both data.
+The Dropout layer randomly sets input units to 0 with a frequency of rate at each step during training 
+	time, which helps prevent overfitting. Inputs not set to 0 are scaled up by 1/(1 - rate) such 
+	that the sum over all inputs is unchanged.
+
+There are many ways for data augmentation:
+
+1. Word embeddings
+
+
+2. BERT:
+
+
+3. Back Translation
+
+
+4: T5
+
+
+5: Ensemble approach
