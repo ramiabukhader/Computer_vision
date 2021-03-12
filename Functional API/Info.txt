@@ -1,0 +1,30 @@
+Sequential model has exactly one input and one output and consists of a linear stack of layers
+	as seen in the previous examples.
+This assumption becamse inflexible for some models that require independent inputs, multiple
+	outputs or models that have branching between layers such as graphs of layers.
+
+1. Multi input models: this works by merging the data coming from different input sources and
+	processing each type of this data using different types of neural layers.
+
+Examples of Multi input models: Predicting the price of old painting, it has Meta data, Text description
+	and Pictures or paintings.
+	This example requires:
+	Meta data ---> one hot encoding + dense NN
+	Text --> RNN
+	Picture --> CNN or 2D convnetowrk
+	by merging the modules, we can let the model learn jointly
+2. Multi output models: 
+	example: Classify genre based on text and predict the date of the story
+	- For a short story --> identify its type (romance, comedy etc..)
+	Generating Genre and Date means that the model has two outputs.
+
+To solve this, we need a graph networks. that processing the inputs by several Conv branches 
+	whose outputs are then merged back into a single tensor (Developed at google and called
+	Inception family of networks). or adding residual connections to a model ( from Microsoft 
+	called ResNet family of networks).
+
+So Functional API is the use of layers as functions that take sensors and return sensors (sensors 
+	manipulation). Tensors calling each others in the network.
+
+3. Multi input and Multi output models:
+	
