@@ -8,16 +8,19 @@ The Dropout layer randomly sets input units to 0 with a frequency of rate at eac
 
 There are many ways for data augmentation:
 
-1. Word embeddings
+1. Word embeddings:
+	DataSet --> Find Keywords in the data --> find similar words ---> replace keywords
 
+2. BERT( Bidirectional Encoder Representation from Transformer):
+	A. Mask Word Prediction: 
+		Dataset --> Mask Keywords --> Masked word (finding similar words) --> Augmented data
+	B. Next Sentence Prediction:
 
-2. BERT:
+3. Back Translation (Best Tech in DA in NLP) :
+	BT uses deep neural networks to generate a new sentences which have the same meaning
+	of the original sentences. (mostly for translation between languages)
 
-
-3. Back Translation
-
-
-4: T5
-
-
-5: Ensemble approach
+4: T5 ( Text to Text Transfer Transformer)
+	
+5: Ensemble approach: 
+	Applying different DA approaches and merge them to get a new output
